@@ -4,34 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction</title>
-    <link rel="stylesheet" href="another.css">
-</head>
+    <title>Welcome to AA Fitness </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
-    <p>Javascript</p>
-    <script type="application/Javascript">
-   console.log('AC')
-//   for(let index = 0; index < 100; index++ ){
-//     console.log("Hello World")
-//   }
-   const array = ['Apple', 'Gold', 'Pen', 'Table'];
-
-// for(var index = 0; index < array.length; index++){
-//     console.log(array[index])
-// }
-
- let i = 0;
-
-//  while (i < 0){
-//     console.log('hello world');
-//     console.log(i);
-//     i++
-//  }
-
-// //  while(i < array.length){
-//     console.log(array[i]);
-//     i++;
-//  }
-    </script> 
+    <Header>
+ <nav class="nav-bar">
+    <div class="logos">
+    <a href="#" class="logo">
+        <span>AAF</span><span class="biceps">&#x1F4AA;</span>
+    </a>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">News</a>
+        <a href="#media-icon">Contact</a>
+        <a href="#intro-text">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+ </nav>  
+ 
+</header>
+<main>
+ <div class="home">
+  <section class="hero">
+    <div id="intro-text" class="intro-text">
+      <h1>
+        <span class="hear"> Welcome to AA Fitness </span> <br />
+      </h1>
+      <p class="Exclusive">
+        Regular exercise has been shown to help boost energy levels and enhance your mood. It may also be associated with many other powerful health benefits, including a reduced risk of chronic disease. <br />
+        We at AAF dedicate some special time to help you achieve the best possible healthy physique.
+      </p>
+      <h3>
+        Our Exclusive Offers
+      </h3>
+      <p class="Exclusive">
+        AA Fitness is committed to helping you start a healthy fitness routine that will improve your health and deliver unparalleled results. Move better, feel better and live better through AAF. Book your first class now
+      </p>
+    </div>
+    <div id="sub-form" class="sub-form">
+        <form autocomplete="on">                                                                          
+            <fieldset> <legend><h4>First Class for free </h4></legend>
+                <label for="fname" value=>Fullname</label><br>
+                <input type="text" name="fname" id="fname" placeholder="Fullname..." required><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Email Address.." required><br>
+                <label for="pnumber">Phone number </label><br>
+                <input type="number" name="pnumber" id="pnumber" placeholder="Phone number..." required><br>
+                <label for="gender">Gender</label><br>
+                <select name="gender" id="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select><br><br>
+                <button type="button" onclick="alert('form submitted successfully')">Try AAF Now</button>                                            
+            </fieldset>
+          </form>
+    </div>
+   </section>
+  </div>
+  <div id="services" class="services">
+    <h4 class="OS">Our Services</h4>
+    <ul type="none">
+      <li><img src="/Imag/image9.jpg" width="250" height="150vh"><p>Personal Trainer <br>Maximize your workout with the help of our personal trainers.</p></li>
+      <li><img src="/Imag/image11.jpg" width="250" height="150vh"><p>Group Classes <br>We offer classes for yoga, spin, Zumba, Circuit Training, MX4 and more.</p></li>
+      <li><img src="/Imag/image10.jpg" width="250" height="150vh"><p>State-of-Art-Equipments<br>Each AAF facility offers high quality cardio & strength equipment.</p></li>
+    </ul>
+  </div>
+ <div classs="bottom">
+    <div id="media-icon" class="media-icon">
+        <h3>Connect with us on Social Media</h3>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-snapchat-ghost"></a>
+    </div>
+    
+    <footer>
+      SH Week 3 Task  <br>
+      &copy;2023. All Rights Reserved
+    </footer>
+  </div>  
 </body>
 </html>
